@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [RC Suite]" parallel="methods">
+  <parameter name="browser" value="FF"/>
+  <parameter name="Module" value="All Modules"/>
+  <parameter name="url" value="http://newpdp.rcdnb.com/company/logout"/>
+  <listeners>
+    <listener class-name="Test.EnvReaderListener"/>
+  </listeners>
+  <test name="RC Test(failed)" parallel="methods">
+    <classes>
+      <class name="Test.Initiate">
+        <methods>
+          <include name="Ini"/>
+          <include name="checkHome" invocation-numbers="0"/>
+          <include name="publishReport"/>
+        </methods>
+      </class> <!-- Test.Initiate -->
+    </classes>
+  </test> <!-- RC Test(failed) -->
+</suite> <!-- Failed suite [RC Suite] -->

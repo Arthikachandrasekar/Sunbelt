@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RC Suite" duration-ms="98535" started-at="2018-02-20T11:17:14Z" finished-at="2018-02-20T11:18:52Z">
+    <groups>
+    </groups>
+    <test name="RC Test" duration-ms="98535" started-at="2018-02-20T11:17:14Z" finished-at="2018-02-20T11:18:52Z">
+      <class name="Test.Initiate">
+        <test-method status="PASS" signature="Ini()[pri:0, instance:Test.Initiate@35fb3008]" name="Ini" is-config="true" duration-ms="184" started-at="2018-02-20T16:47:14Z" finished-at="2018-02-20T16:47:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ini -->
+        <test-method status="FAIL" signature="checkHome(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test.Initiate@35fb3008]" name="checkHome" duration-ms="97889" started-at="2018-02-20T16:47:14Z" finished-at="2018-02-20T16:48:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://96.90.100.123:8080/SupplierManagement/user/RcBackdoor-login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[All Modules]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'RCCHN0102', ip: '10.22.175.187', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\User\AppData\Local\Temp\rust_mozprofile.hkdBvhWq8tTy, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.1, platformVersion=6.1, moz:processID=25220, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e1651742-2781-44ab-b13f-18705178f834
+*** Element info: {Using=xpath, value=//input[@value='Confirm']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'RCCHN0102', ip: '10.22.175.187', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\User\AppData\Local\Temp\rust_mozprofile.hkdBvhWq8tTy, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.1, platformVersion=6.1, moz:processID=25220, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e1651742-2781-44ab-b13f-18705178f834
+*** Element info: {Using=xpath, value=//input[@value='Confirm']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at Test.Browser$4.apply(Browser.java:1123)
+	at Test.Browser$4.apply(Browser.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Test.Browser.waitForPageElementToLoad(Browser.java:1116)
+	at Test.Browser.waitForPageElementToLoad(Browser.java:1098)
+	at Test.Browser.findTheElement(Browser.java:237)
+	at Test.BatchUploads.uploadFile(BatchUploads.java:298)
+	at Test.BatchUploads.executeAll(BatchUploads.java:32)
+	at Test.Initiate.batchupload(Initiate.java:90)
+	at Test.Initiate.checkHome(Initiate.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHome -->
+        <test-method status="PASS" signature="publishReport()[pri:0, instance:Test.Initiate@35fb3008]" name="publishReport" is-config="true" duration-ms="425" started-at="2018-02-20T16:48:52Z" finished-at="2018-02-20T16:48:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishReport -->
+      </class> <!-- Test.Initiate -->
+    </test> <!-- RC Test -->
+  </suite> <!-- RC Suite -->
+</testng-results>

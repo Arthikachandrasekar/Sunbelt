@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 99.222 sec <<< FAILURE! - in TestSuite
+checkHome(Test.Initiate)  Time elapsed: 97.902 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'RCCHN0102', ip: '10.22.175.187', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\User\AppData\Local\Temp\rust_mozprofile.hkdBvhWq8tTy, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0.1, platformVersion=6.1, moz:processID=25220, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: e1651742-2781-44ab-b13f-18705178f834
+*** Element info: {Using=xpath, value=//input[@value='Confirm']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at Test.Browser$4.apply(Browser.java:1123)
+	at Test.Browser$4.apply(Browser.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Test.Browser.waitForPageElementToLoad(Browser.java:1116)
+	at Test.Browser.waitForPageElementToLoad(Browser.java:1098)
+	at Test.Browser.findTheElement(Browser.java:237)
+	at Test.BatchUploads.uploadFile(BatchUploads.java:298)
+	at Test.BatchUploads.executeAll(BatchUploads.java:32)
+	at Test.Initiate.batchupload(Initiate.java:90)
+	at Test.Initiate.checkHome(Initiate.java:72)
+
