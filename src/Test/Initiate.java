@@ -81,9 +81,9 @@ public class Initiate {
 			else if("All Modules".equalsIgnoreCase(Module))
 			{
 				login();
-				industrySearch();	
+// 				industrySearch();	
 //				companySearch();
-				uploadDNUSNumberFile();
+// 				uploadDNUSNumberFile();
 //				logout();
 			}	
 		}
